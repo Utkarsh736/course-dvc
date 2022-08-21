@@ -1,0 +1,11 @@
+base:
+  random_stage: 42
+
+data:
+  # loading data
+
+train:
+  # training, hyperparams
+
+reports:
+  # metrics, images, etc.
