@@ -2,7 +2,7 @@ base:
   random_stage: 42
 
 data:
-  # loading data
+  dataset_csv: 'data/raw/iris.csv'
 
 train:
   # training, hyperparams
