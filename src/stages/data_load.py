@@ -4,6 +4,7 @@ from typing import Text
 import yaml
 
 def data_load(config_path: Text) -> None:
+
     with open(config_path) as conf_file:
         config = yaml.safe_load(conf_file)
 
@@ -13,3 +14,5 @@ def data_load(config_path: Text) -> None:
     dataset.columns = [colname.strip(' (cm)').replace(' ', '_') for colname in dataset.columns.tolist()]
     # Save
     dataset.to_csv(config['data']['dataset_csv'], index=False)
+
+    return("Data Load complete")
